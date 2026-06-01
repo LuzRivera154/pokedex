@@ -12,7 +12,7 @@ export function App({ pokemons }: { pokemons: PokemonDTO[] }) {
         <div className="container-element">
             <PokemonList pokemons={pokemons} onClickChangePokemon={setPokemon} />
             <div className="container-search-detail">
-                <SearchBar InputPokemon ={setPokemon} />
+                <SearchBar InputPokemon={setPokemon} />
                 <PokemonDetail pokemon={currentPokemon}
                     pokemons={pokemons}
                     onClickChangePokemon={
